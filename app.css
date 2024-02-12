@@ -1,0 +1,195 @@
+/* ===================== */
+/* ========[ root ]========= */
+/* ===================== */
+
+
+:root{
+    --white: hsla(0, 100%, 100%, 1);
+    --cultured: hsla(0, 8%, 97%, 1);
+    --cultured-2: hsla(0, 0%, 92%, 1);
+    --gainsboro: hsla(240, 2%, 88%, 1);
+    --black: hsla(0, 100%, 0%, 1);
+    --text-clr: var(--white);
+}
+
+.dark-mode{
+    --white: hsla(0, 100%, 100%, 1);
+    --cultured: hsla(0, 8%, 97%, 1);
+    --cultured-2: hsla(0, 0%, 95%, 1);
+    --gainsboro: hsla(240, 2%, 88%, 1);
+    --black: hsla(0, 100%, 0%, 1);
+    --text-clr: var(--black);
+}
+
+/* =======[reset]======= */
+
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0 .5rem;
+    min-height: 100vh;
+    display: block;
+    background: var(--white);
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* setting up image */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    letter-spacing: .05ch;
+    font-size: 2rem;
+}
+
+/* =================================== */
+/* ========[ utilty-classes ]========= */
+/* =================================== */
+
+.flex{
+    display: flex;
+}
+
+.active{
+    background: var(--cultured-2);
+}
+
+
+.intro{
+    padding: 1rem;
+}
+.intro h1{
+    
+    padding-bottom: .35rem;   
+}
+.intro p{
+    font-size: .8rem;
+}
+
+.user-input{
+  padding: 1rem;
+}
+
+
+.num-input{
+    height: 45px;
+    width: 20%;
+    background: none;
+    font-size: 1.0rem;
+    padding: 1rem;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+}
+.num-input:active,
+.num-input:hover,
+.num-input:focus{
+    border: 1px solid var(--gainsboro);
+    outline: none;
+}
+
+.selection{  
+    display: inline-block; 
+    width: 100%;
+    position: relative;
+    margin: 0 .5rem;    
+}
+
+.selection .selected{
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;  
+    border: 1px solid var(--black);
+    border-radius: 10px;   
+}
+
+.selection .options{
+   width: 100%;
+   padding: .5rem;
+   margin: .5rem 0;
+   border: 1px solid var(--black);
+   border-radius: 10px;
+   display: none;      
+}
+.options p{
+    padding: .75rem;
+    border-radius: 10px;
+}
+
+.generate-btn{
+    background: var(--black);
+    color: white;
+    border: 1px solid var(--black);
+    padding: .5rem 1rem;
+    margin: .5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0  var(--gainsboro);
+}
+
+.generate-btn:hover
+,.generate-btn:active
+,.generate-btn:focus{
+    box-shadow: 0px 0px 0  var(--gainsboro);
+    
+}
+.result{
+   padding: 1rem; 
+   display: none;
+}
+
+.output{
+    padding: 1rem 0;
+}
+
+.copy{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.copy-btn{
+    align-items: center;
+    background: var(--cultured);
+    color: grey;
+    border: none;
+    padding: .5rem 1rem;   
+}
+.generated{
+    background: var(--cultured);
+    padding: 1rem;
+
+} 
+
+.credit{
+    position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--cultured);
+  text-align: center;
+  border-top: 1px solid var(--black);
+}
+
+
+
+
+
