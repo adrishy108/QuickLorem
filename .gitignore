@@ -1,0 +1,10 @@
+# Ignore files in the src directory
+/src/*
+
+# Ignore files in the Public directory
+/Public/*
+
+# Ignore specific file types
+*.log
+*.txt
+*.html
